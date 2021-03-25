@@ -1,0 +1,217 @@
+@font-face {
+    font-family: Shadow;
+    src: url(../fonts/Shadow.ttf); 
+}
+
+@font-face {
+	font-family: 'Circe';
+	src: url('fonts/Circe-Regular.eot');
+	src: local('Circe'), local('Circe-Regular'),
+		url('fonts/Circe-Regular.eot?#iefix') format('embedded-opentype'),
+		url('fonts/Circe-Regular.woff') format('woff'),
+		url('fonts/Circe-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Circe';
+	src: url('../fonts/Circe-ExtraLight.eot');
+	src: local('Circe ExtraLight'), local('Circe-ExtraLight'),
+		url('fonts/Circe-ExtraLight.eot?#iefix') format('embedded-opentype'),
+		url('fonts/Circe-ExtraLight.woff') format('woff'),
+		url('fonts/Circe-ExtraLight.ttf') format('truetype');
+	font-weight: 200;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Circe';
+	src: url('fonts/Circe-Thin.eot');
+	src: local('Circe Thin'), local('Circe-Thin'),
+		url('fonts/Circe-Thin.eot?#iefix') format('embedded-opentype'),
+		url('fonts/Circe-Thin.woff') format('woff'),
+		url('fonts/Circe-Thin.ttf') format('truetype');
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Circe';
+	src: url('fonts/Circe-Light.eot');
+	src: local('Circe Light'), local('Circe-Light'),
+		url('fonts/Circe-Light.eot?#iefix') format('embedded-opentype'),
+		url('fonts/Circe-Light.woff') format('woff'),
+		url('fonts/Circe-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(#2c2b2b, #221419);
+    /* background-color: #141012;
+    background-image: url("img/bg-pattern.png"); */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    min-height: 100%;
+}
+
+.container{
+    display: flex;
+    max-width: 1170px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+h1 {
+    color: rgb(230, 227, 227);
+    font-size: 2.5rem;
+    font-family: "Shadow", Arial, sans-serif;
+}
+
+h2 {
+    color: rgb(235, 235, 235);
+    font-size: 2rem;
+    font-family: 'Circe', sans-serif;
+    font-weight: 400;
+}
+
+
+/* HEADER */
+header > div {
+    justify-content: center;
+}
+
+#logo {
+    margin: 25px 0;
+}
+
+#logo > a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+
+#text-logo {
+    color: white;
+    font-size: 2rem;
+    margin: 10px 0;
+    align-self: center;
+}
+
+/* MAIN */
+
+main {
+    margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+main > .container {
+    flex-direction: column;
+    width: 100%;
+}
+
+.section-name {
+    background: linear-gradient(90deg,  rgba(117, 72, 72, 0.2) 0%, rgba(49, 48, 48, 0) 100%);
+    padding-left: 20px;
+}
+
+.version {
+    align-self: center;
+    margin-bottom: 15px;
+}
+
+/* .new-heroes {
+    display: flex;
+    flex-direction: column;
+} */
+
+section {
+    margin: 15px 0;
+}
+
+section > h2 {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.name-icon {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.name-icon :first-child {
+    width: 40px; 
+}
+
+.main-attribute {
+    width: 26px;
+}
+
+.name {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.big-changes {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    color:rgba(177, 105, 22, 0.925);
+}
+
+.hero-changes-list {
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+
+li, .spell-desc, .new-item-desc  {
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    font-family: 'Circe', sans-serif;
+    font-weight: 200;
+    margin-bottom: 5px;
+}
+
+/* NEW HEROES */
+.new-hero-skills,
+.new-item-desc {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+}
+
+.abilities-header {
+    font-size: 1.7rem;
+    font-weight: 200;
+}
+
+.ultimate-name {
+    text-shadow: 0 0 2px rgb(255, 229, 229);
+}
+
+.sp {
+    color: rgb(210, 210, 255);
+    font-size: 1.2rem;
+}
+
