@@ -55,12 +55,13 @@
     border: 0;
     box-sizing: border-box;
     font-size: 14px;
+    font-family: 'Circe', sans-serif;
 }
 
 body{
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(#2c2b2b, #221419);
+    background-image: linear-gradient(#2b2b2c, #141a22);
     /* background-color: #141012;
     background-image: url("img/bg-pattern.png"); */
     font-family: Arial, Helvetica, sans-serif;
@@ -86,7 +87,6 @@ h1 {
 h2 {
     color: rgb(235, 235, 235);
     font-size: 2rem;
-    font-family: 'Circe', sans-serif;
     font-weight: 400;
 }
 
@@ -98,6 +98,8 @@ header > div {
 
 #logo {
     margin: 25px 0;
+    max-width: 100%;
+
 }
 
 #logo > a {
@@ -128,8 +130,10 @@ main > .container {
 }
 
 .section-name {
-    background: linear-gradient(90deg,  rgba(117, 72, 72, 0.2) 0%, rgba(49, 48, 48, 0) 100%);
+    background: linear-gradient(90deg,  rgba(72, 79, 117, 0.2) 0%, rgba(49, 48, 48, 0) 100%);
     padding-left: 20px;
+    padding-top: 3px;
+    
 }
 
 .version {
@@ -188,22 +192,27 @@ section > h2 {
 li, .spell-desc, .new-item-desc  {
     color: rgb(255, 255, 255);
     font-size: 1.2rem;
-    font-family: 'Circe', sans-serif;
     font-weight: 200;
     margin-bottom: 5px;
 }
 
-/* NEW HEROES */
+/* NEW HEROES AND ITEMS */
 .new-hero-skills,
 .new-item-desc {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     padding-left: 30px;
 }
 
 .abilities-header {
-    font-size: 1.7rem;
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
     font-weight: 200;
+}
+
+.header-small {
+    margin-top: 15px;
+    font-size: 1.4rem;
 }
 
 .ultimate-name {
@@ -215,3 +224,19 @@ li, .spell-desc, .new-item-desc  {
     font-size: 1.2rem;
 }
 
+.item-lore {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.item-changes-list {
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+
+.change-no-icon {
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    font-weight: 200;
+    margin-bottom: 5px;
+}
