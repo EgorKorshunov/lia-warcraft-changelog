@@ -163,7 +163,7 @@ section > h2 {
     margin: 10px 0;
 }
 
-.name-icon :first-child {
+.name-icon > :first-child {
     width: 40px; 
 }
 
@@ -224,9 +224,14 @@ li, .spell-desc, .new-item-desc  {
     font-size: 1.2rem;
 }
 
-.item-lore {
+.item-lore, .recipe {
     font-size: 1.2rem;
     margin-bottom: 5px;
+}
+
+.new-item-list, .recipe-list {
+    padding-left: 30px;
+    margin-bottom: 10px;
 }
 
 .item-changes-list {
@@ -239,4 +244,20 @@ li, .spell-desc, .new-item-desc  {
     font-size: 1.2rem;
     font-weight: 200;
     margin-bottom: 5px;
+}
+
+.shop-name {
+    font-size: 1em;
+    color: rgb(168, 168, 168);
+}
+
+.item-cost > img {
+    width: 16px;
+    height: 16px;
+}
+.item-cost {
+    display: flex;
+    gap: 3px;
+    align-items: center;
+    color: rgb(196, 183, 12);
 }
